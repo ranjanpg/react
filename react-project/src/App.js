@@ -4,12 +4,12 @@ import React, { useState } from "react";
 
 
 function App() {
-  const [tastCount, setTaskCount] = useState('0');
+  const [taskCount, setTaskCount] = useState('0');
 
   const addNewExpense = (expenseData) => {
     if(expenseData) {
       expenseData = {
-        id: `${tastCount}`,
+        id: `${taskCount}`,
         ...expenseData
       };
       setTaskCount( (prevCount) => {
